@@ -27,6 +27,22 @@ public class Principal {
         }else{
             System.err.println("Chave não existe");
         }
+        //--------------------------------------------------------------------
+                // Usando foreach
+
+        /*
+         * O método "keySet()" retorna um Set com todas as chaves do
+         * nosso HashMap, e tendo o Set com todas as Chaves,
+         * podemos facilmente pegar
+         * os valores que desejamos
+         * */
+
+        for (String key : example.keySet()) {
+
+            //Capturamos o valor a partir da chave
+            String value = example.get(key);
+            System.out.println(key + " = " + value);
+        }
 
     }
 }
